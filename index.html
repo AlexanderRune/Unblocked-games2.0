@@ -1,9 +1,3 @@
-<!--
-  Unblocked games — iOS26-inspired template med app-ikoner
-  - Sökruta + header finns kvar
-  - Appar visas som rena ikoner (endast bild med rundade hörn)
--->
-
 <!doctype html>
 <html lang="sv">
 <head>
@@ -17,39 +11,37 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
-            <path d="M7 12h10M12 7v10" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+  <div id="wrapper">
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+              <path d="M7 12h10M12 7v10" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <h1>Classroom</h1>
+          </div>
         </div>
-        <div>
-          <h1>Classroom</h1>
-          <p>Lots of work</p>
+
+        <div class="controls">
+          <label class="search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/></svg>
+            <input type="search" placeholder="Search" aria-label="Sök spel">
+          </label>
         </div>
-      </div>
+      </header>
 
-      <div class="controls">
-        <label class="search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/></svg>
-          <input type="search" placeholder="Sök spel" aria-label="Sök spel">
-        </label>
-      </div>
-    </header>
-
-    <main>
-      <section class="grid" id="gamesGrid">
-        <!-- Appar (endast ikoner) -->
-        <a class="app-card" href="#"><img src="https://picsum.photos/200/200?random=1" alt="Stickman"></a>
-        <a class="app-card" href="#"><img src="https://picsum.photos/200/200?random=2" alt="Spel 2"></a>
-        <a class="app-card" href="#"><img src="https://picsum.photos/200/200?random=3" alt="Spel 3"></a>
-        <a class="app-card" href="#"><img src="https://picsum.photos/200/200?random=4" alt="Spel 4"></a>
-        <a class="app-card" href="#"><img src="https://picsum.photos/200/200?random=5" alt="Spel 5"></a>
-      </section>
-    </main>
+      <main>
+        <section class="grid" id="gamesGrid">
+          <!-- Appar (endast ikoner) -->
+          <a class="app-card" target="_blank" href="games/cookieclicker/index.html"><img src="app-card-img/cookieclickerimage.webp" alt="Cookie Clicker"></a>
+          <a class="app-card" target="_blank" href="games/chromedino-gh-pages/index.html"><img src="app-card-img/chrome dino.png" alt="Cookie Clicker"></a>
+        </section>
+      </main>
+    </div>
   </div>
 
   <script>
